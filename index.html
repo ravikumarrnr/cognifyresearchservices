@@ -2,94 +2,200 @@
 <html>
 <head>
 <title>Cognify Research Services</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+
 body{
-font-family: Arial;
-text-align:center;
-background:#f5f7fa;
-margin:0;
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f7fa;
 }
 
+/* NAVBAR */
+nav{
+    background:#0a2540;
+    padding:15px;
+    text-align:right;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HEADER */
 header{
-background:#0a2540;
-color:white;
-padding:40px;
+    background:linear-gradient(135deg,#0a2540,#1f4e79);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
 }
 
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* SECTIONS */
 section{
-padding:40px;
+    padding:60px 20px;
+    text-align:center;
 }
 
 h2{
-color:#0a2540;
+    color:#0a2540;
+    margin-bottom:20px;
 }
 
-footer{
-background:#0a2540;
-color:white;
-padding:15px;
+/* ABOUT */
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:justify;
+    line-height:1.8;
+    font-size:16px;
 }
+
+/* SERVICES */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:220px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* CONTACT */
+.contact{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.btn{
+    background:#1f4e79;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    display:inline-block;
+    margin-top:15px;
+}
+
+/* FOOTER */
+footer{
+    background:#0a2540;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<!-- HEADER -->
 <header>
 <h1>Cognify Research Services</h1>
 <p>Empowering Insights Through Research and Innovation</p>
 </header>
 
+<!-- ABOUT -->
 <section>
-<h2>About</h2>
+<h2>About Us</h2>
+
+<div class="about">
+
 <p>
 Cognify Research Services was established in December 2025 with a vision to deliver high-quality, technology-driven research consulting and academic support solutions. The organization is officially registered under Goods and Services Tax (GST) on 24 December 2025, ensuring compliance, credibility, and professional service delivery.
-
-Cognify Research Services specializes in providing comprehensive research consulting services, including PhD proposal writing, refined research proposal development, systematic literature review support, and end-to-end assistance in drafting high-quality research papers for reputed journals and conferences. In addition, the organization offers implementation support for Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL) models, enabling researchers and institutions to translate theoretical concepts into practical, impactful solutions.
-
-The services also extend to structured training programs focused on the effective use of AI tools in research and innovative Teaching-Learning Methodologies (TLM). These programs are designed to enhance research productivity, academic writing quality, and pedagogical effectiveness through the integration of advanced AI technologies.
-
-With a commitment to excellence, innovation, and ethical research practices, Cognify Research Services aims to empower researchers, academicians, and organizations to achieve their research and innovation goals efficiently and effectively.
 </p>
-</section>
 
-<section>
-<h2>Services</h2>
-
-<ul style="list-style-type: disc; text-align:left; max-width:600px; margin:auto; line-height:1.8;">
-
-<li>Research Consulting</li>
-<li>PhD Proposal Writing</li>
-<li>Refined Research Proposal Development</li>
-<li>Systematic Literature Review Support</li>
-<li>Research Paper Drafting for Journals and Conferences</li>
-
-<li>AI & Machine Learning Solutions</li>
-<li>Deep Learning Model Development</li>
-<li>Implementation Support for AI/ML/DL Models</li>
-
-<li>Data Analysis and Visualization</li>
-
-<li>Academic Writing & Publication Support</li>
-<li>Patent and Innovation Consulting</li>
-
-<li>Training on AI Tools for Research</li>
-<li>AI Tools for Teaching-Learning Methodologies (TLM)</li>
-
-</ul>
-
-</section>
-
-<section>
-<h2>Contact</h2>
 <p>
-Email: cognifyresearchservices@gmail.com<br>
-Phone: +91 7397614474<br>
-Location: 39, Hospital Road, Opp. to Caress Industry, Erode, 638455, Tamil Nadu, India.
+The organization specializes in PhD proposal writing, refined research proposal development, systematic literature review support, and drafting research papers for high-impact journals and conferences. In addition, implementation assistance for Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL) models is provided to bridge theoretical concepts with practical applications.
 </p>
+
+<p>
+Cognify Research Services also offers structured training programs on AI tools for research and Teaching-Learning Methodologies (TLM), enabling academicians and researchers to enhance productivity, innovation, and academic excellence.
+</p>
+
+</div>
+
 </section>
 
+<!-- SERVICES -->
+<section>
+<h2>Our Services</h2>
+
+<div class="container">
+
+<div class="card">Research Consulting</div>
+<div class="card">PhD Proposal Writing</div>
+<div class="card">Research Proposal Development</div>
+<div class="card">Literature Review Support</div>
+<div class="card">Research Paper Drafting</div>
+
+<div class="card">AI & ML Solutions</div>
+<div class="card">Deep Learning Models</div>
+<div class="card">AI/ML Implementation</div>
+<div class="card">Data Analysis & Visualization</div>
+
+<div class="card">Publication Support</div>
+<div class="card">Patent Consulting</div>
+
+<div class="card">AI Tools Training</div>
+<div class="card">AI in Teaching (TLM)</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact Us</h2>
+
+<div class="contact">
+<p><b>Email:</b> cognifyresearchservices@gmail.com</p>
+<p><b>Phone:</b> +91 7397614474</p>
+<p><b>Location:</b> Erode, Tamil Nadu, India</p>
+
+<a href="mailto:cognifyresearchservices@gmail.com" class="btn">Contact Now</a>
+</div>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
-© 2026 Cognify Research Services
+© 2026 Cognify Research Services | All Rights Reserved
 </footer>
 
 </body>
